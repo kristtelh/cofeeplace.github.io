@@ -1,3 +1,12 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+    background-image: image(ghibli.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +15,21 @@
 body {
   margin: 0;
   padding: 0;
-  height:1000px;
+  height:100px;
 }
 p{
-  color: #8EF59F;
+  color: #524c56;
   font-size: 160%;
   line-height: 155%
   padding: 3%;
+  text-indent: 2%;
+  text-align: justify;
+}
+li{
+  color: #524c56;
+  font-size: 140%;
+  line-height: 155%
+  padding: 0%;
   text-indent: 2%;
   text-align: justify;
 }
@@ -20,13 +37,13 @@ h3{
   font-size: 175%;
   line-height: 145%;
   font-weight: 500;
-  color: #8EF59F;
+  color: #524c56;
   text-align: center;
   text-transform: uppercase;
   padding: 0;
 }
 a{
-  color:#8EF59F;
+  color:#524c56;
   text-decoration: none;
   font-weight: bold;
 }
@@ -36,33 +53,33 @@ a:hover{
 img{
   display: block;
   margin: 0 auto;
-  max-width: 200%;
+  max-width: 100%;
    height: auto;
    width: auto;
    margin-bottom: -4px;
 }
 #wrapper{
-  max-width: 200px;
-  margin: 100px auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #banner-wrapper{
-  max-width: 2000px;
-  margin: 100 auto;
-  padding: 5% 10% 3% 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 3% 0;
 }
 
 header{
-  width: 50%;
-  height: 100px;
-  top: 100px;
+  width: 100%;
+  height: 200px;
+  top: 600px;
   left: 0;
 }
 
 header #logo img{
-  margin: 1000px;
+  margin: 2px;
   float: left;
-  width: 630px;
+  width: 200px;
 }
 
 nav{
@@ -195,6 +212,7 @@ footer{
   font-size: 160%;
   line-height: 155%;
 }
+
 @media screen and (max-width: 768px) {
   p{
     font-size: 130%;
@@ -264,4 +282,40 @@ footer{
       padding: 2% 0 0 0;
       font-size: 80%;
     }
+}
+#menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Espacio entre columnas */
+}
+
+#menu h4 {
+  grid-column: span 3; /* Cada encabezado de sección abarcará las tres columnas */
+}
+h3{
+  font-size: 175%;
+  line-height: 145%;
+  font-weight: 500;
+  color: #524c56;
+  text-align center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.one-second-padding{
+  width: 90%;
+  margin: 0;
+  padding: 5%;
+}
+#menu ul {
+  list-style-type: none; /* Elimina los puntos de lista */
+  padding: 3%; /
+
+}
+
+#menu ul li {
+    list-style-type: none;
+  padding: 5%;
+
+    text-align: center; /* Espacio entre los elementos de la lista */
 }
